@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'UNESCO Klub Petefi'
 theme = 'lugo'
 relativeURLs = true
+canonifyURLs = true
 
 [params.author]
   name = "Mila Dragic"
