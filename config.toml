@@ -1,7 +1,12 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Lorem Ipsum'
+title = 'UNESCO Klub Petefi'
 theme = 'lugo'
+
+[params.author]
+  name = "Mila Dragic"
+  email = "example@text.here"
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
