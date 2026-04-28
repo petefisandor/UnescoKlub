@@ -2,6 +2,7 @@ baseURL = 'http://petefisandor.github.io/UnescoKlub/'
 languageCode = 'en-us'
 title = 'UNESCO Klub Petefi'
 theme = 'lugo'
+relativeURLs = true
 
 [params.author]
   name = "Mila Dragic"
