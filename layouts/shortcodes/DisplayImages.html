@@ -1,0 +1,23 @@
+
+{{ $imagePattern := default "/**.{jpg,jpeg,png,gif}" (.Get 0) }}
+{{ $images := resources.Match $imagePattern }}
+
+
+
+{{ if $images }}
+  <div class="image-gallery">
+    {{ range sort $images "Name" }}
+      {{/* Optional: Resize images for better performance */}}
+      {{ $thumbnail := .Resize "300x auto" }} 
+      <figure>
+        <a href="{{ .RelPermalink }}">
+          <img src="{{ $thumbnail.RelPermalink }}" alt="{{ .Name }}">
+        </a>
+        <figcaption>{{ .Name }}</figcaption>
+      </figure>
+    {{ end }}
+  </div>
+{{ else }}
+  <p>No images found matching pattern: {{ $imagePattern }}</p>
+{{ end }}
+

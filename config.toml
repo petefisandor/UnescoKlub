@@ -1,0 +1,7 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Lorem Ipsum'
+theme = 'lugo'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
